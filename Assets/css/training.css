@@ -1,0 +1,341 @@
+@font-face {
+    font-family: Averta;
+    src: url(https://res.cloudinary.com/dafsch2zs/raw/upload/v1596618987/Zuri%20Landing/AvertaDemoPECuttedDemo-Regular_dghpn7.otf);
+}
+
+:root {
+    --main-color: #E7332B;
+    --secondary-color: #FFFAFA;
+    --Dark-gray: #212529;
+    --Light-gray: #514949;
+    --green: #43b97f;
+    --white: #FFFFFF;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Averta', sans-serif;
+}
+
+html,
+body {
+    font-size: 16px;
+    background-color: var(--secondary-color);
+    color: var(--Dark-gray);
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: var(--Light-gray);
+}
+
+.container {
+    width: 100%;
+    max-width: 90rem !important;
+    margin: 0 auto;
+    padding: 0 5rem;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* HEADER SECTION */
+
+.nav__container {
+    width: 100%;
+    height: 5rem;
+    padding: 1rem 5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--secondary-color);
+    z-index: 10;
+}
+
+.nav__list {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__link {
+    margin-right: 2.5rem;
+}
+
+.thumb,
+.btn__enroll {
+    margin-right: 0;
+}
+
+.thumb {
+    max-width: 3rem;
+    background-color: var(--main-color);
+    border-radius: 100%;
+}
+
+
+/*HERO SECTION*/
+
+.hero__section {
+    min-height: 100vh;
+    padding-top: 12.5rem !important;
+}
+
+.hero__section .lady-pic,
+.hero__section .guy-pic {
+    max-width: 25%;
+}
+
+.hero__section .lady-pic img,
+.hero__section .guy-pic img,
+.why-zuri__section .row .star img {
+    mix-blend-mode: darken;
+}
+
+.hero__section .lady-pic img {
+    min-width: 25rem !important;
+}
+
+.hero__section .hero__text-box {
+    max-width: 50%;
+    justify-content: center;
+    text-align: center;
+}
+
+.p-1 {
+    font-size: 1.12rem !important;
+    font-weight: 400;
+    color: var(--main-color);
+}
+
+.p-2 {
+    font-size: 3.4rem !important;
+    font-weight: 700;
+    color: var(--Dark-gray);
+    line-height: 110% !important;
+}
+
+.line {
+    display: flex;
+    justify-content: right;
+    margin-left: -1.3rem;
+    margin-bottom: 1.8rem;
+}
+
+.line img {
+    width: 33%;
+}
+
+.p-3 {
+    max-width: 70%;
+    margin: auto !important;
+    font-size: 1.13rem !important;
+    font-weight: 400 !important;
+    color: var(--Light-gray);
+    line-height: 1.4;
+    padding-bottom: 2.5rem;
+}
+
+.btn__hero {
+    font-size: 1.1rem;
+    color: var(--white);
+    padding: .63rem 2rem;
+    background-color: var(--main-color);
+    border: none;
+    border-radius: 4.4rem;
+    cursor: pointer;
+}
+
+.wire {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    margin: auto;
+}
+
+.male__face {
+    display: block;
+    position: absolute;
+    width: 3.3rem !important;
+    margin-top: -8.9rem;
+    margin-right: 2rem;
+}
+
+
+/*POWERED-BY SECTION*/
+
+.powered-by__section .hr {
+    margin-top: 3rem;
+}
+
+.powered-by__section .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.powered-by__section .row .left__align-text {
+    max-width: 24rem;
+    font-size: 1.5rem !important;
+    font-weight: 600 !important;
+    color: var(--Dark-gray);
+    text-align: left;
+    text-transform: uppercase !important;
+}
+
+.middle__logo img {
+    max-width: 80%;
+    mix-blend-mode: darken !important;
+}
+
+.powered-by__section .row .right__align-text {
+    max-width: 23rem;
+    font-size: 1.5rem !important;
+    font-weight: 400 !important;
+    color: var(--Light-gray);
+    text-align: right;
+    text-transform: lowercase !important;
+}
+
+.powered-by__section .row .right__align-text span {
+    color: var(--green);
+    text-decoration: underline;
+    text-transform: capitalize;
+}
+
+
+/**/
+
+.why-zuri__section {
+    padding-top: 3rem;
+}
+
+.why-zuri__section .row {
+    text-align: left;
+}
+
+.col-1 {
+    max-width: 55%;
+}
+
+.wire-2 {
+    display: flex;
+    justify-content: center;
+}
+
+.wire-2 img {
+    width: 15%;
+}
+
+.why-zuri__text {
+    font-size: 1.5rem !important;
+    font-weight: 400;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    color: var(--main-color);
+}
+
+.why-zuri__desc {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--Dark-gray);
+}
+
+.why-zuri__section .row .star {
+    width: 45%;
+    display: inherit;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6rem;
+}
+
+.why-zuri__section .row .star img {
+    width: 41%;
+}
+
+
+/*CARDS SECTION*/
+
+.cards__section {
+    position: relative;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    background: linear-gradient(180deg, rgba(255, 244, 240, 0), #fff4f0 17.19%, #fff4f0 84.37%, rgba(255, 244, 240, 0))!important;
+    background-image: linear-gradient(rgba(255, 244, 240, 0), rgb(255, 244, 240) 17.19%, rgb(255, 244, 240) 84.37%, rgba(255, 244, 240, 0)) !important;
+}
+
+.grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.card {
+    position: relative;
+    background-color: var(--white);
+    border-radius: 1.13rem;
+    padding-left: 1.5rem;
+    padding: 58px 48px 93px 50px!important;
+    box-shadow: 0 11px 22px rgb(231 51 43 / 10%);
+    transition: .5s;
+}
+
+.card:hover {
+    transform: translateY(-0.9rem);
+}
+
+.curve {
+    width: 42%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.card-red-bg {
+    background-color: var(--main-color);
+    color: var(--white);
+}
+
+.card-red-bg .number {
+    color: var(--white);
+}
+
+.number {
+    font-size: 3.75rem;
+    font-weight: 700;
+    color: var(--Dark-gray);
+}
+
+.card-title {
+    font-size: 2.3rem !important;
+    font-weight: 500;
+    padding-top: 2rem;
+    padding-bottom: 2.3rem;
+}
+
+.card-desc {
+    font-size: 1.12rem;
+    font-weight: 300;
+}
+
+
+/**/
+
+.red-bg_section {
+    background-color: var(--main-color);
+}
