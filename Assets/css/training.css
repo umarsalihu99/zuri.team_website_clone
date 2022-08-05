@@ -25,6 +25,7 @@ body {
     font-size: 16px;
     background-color: var(--secondary-color);
     color: var(--Dark-gray);
+    overflow-x: hidden;
 }
 
 img {
@@ -40,7 +41,7 @@ a {
     width: 100%;
     max-width: 90rem !important;
     margin: 0 auto;
-    padding: 0 5rem;
+    padding: 0 4rem;
 }
 
 .row {
@@ -151,7 +152,7 @@ a {
     padding-bottom: 2.5rem;
 }
 
-.btn__hero {
+.btn {
     font-size: 1.1rem;
     color: var(--white);
     padding: .63rem 2rem;
@@ -273,7 +274,7 @@ a {
 .cards__section {
     position: relative;
     margin-top: 5rem;
-    margin-bottom: 5rem;
+    margin-bottom: 10rem;
     background: linear-gradient(180deg, rgba(255, 244, 240, 0), #fff4f0 17.19%, #fff4f0 84.37%, rgba(255, 244, 240, 0))!important;
     background-image: linear-gradient(rgba(255, 244, 240, 0), rgb(255, 244, 240) 17.19%, rgb(255, 244, 240) 84.37%, rgba(255, 244, 240, 0)) !important;
 }
@@ -337,5 +338,181 @@ a {
 /**/
 
 .red-bg_section {
+    padding-top: 3rem;
     background-color: var(--main-color);
+}
+
+.col {
+    flex-basis: 44%;
+    flex-grow: 0;
+    max-width: 44%;
+}
+
+.image-showcase {
+    flex-basis: 56%;
+    flex-grow: 0;
+    max-width: 56%;
+}
+
+.wire-2 {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 12rem;
+}
+
+.wire-2 img {
+    width: 23%;
+}
+
+.small__text,
+.section__desc {
+    font-size: 1.13rem !important;
+    color: var(--white);
+}
+
+.section__title {
+    font-size: 2.5rem !important;
+    font-weight: 700 !important;
+    color: var(--white);
+}
+
+.section__desc {
+    padding-top: 2.6rem !important;
+    width: 76%;
+}
+
+.btn-white {
+    display: inline-block;
+    color: var(--main-color);
+    background-color: var(--white);
+    margin-top: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+.skills {
+    min-width: calc(100% + 24px);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: -1.5rem;
+}
+
+.teamwork,
+.mentorship,
+.practice,
+.fun-games {
+    flex-basis: 50%;
+    flex-grow: 0;
+    max-width: 50%;
+    padding-left: 1.5rem;
+    padding-top: 1.5rem;
+}
+
+.skills button {
+    width: 15rem !important;
+    border: .13rem solid var(--white);
+    background-color: transparent;
+    border-radius: 5rem;
+    font-size: 1rem;
+    color: var(--white);
+    display: flex!important;
+    justify-content: left;
+    align-items: center;
+    padding-bottom: .7rem !important;
+    padding-right: 3rem !important;
+    padding-top: .7rem !important;
+    cursor: no-drop!important;
+    filter: drop-shadow(0 .7rem 1.4rem rgba(231, 51, 43, .1));
+}
+
+.skills button img,
+.skills button p {
+    padding-left: .8rem;
+}
+
+.skills button p {
+    font-weight: 400;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+.left-dots {
+    margin-left: -4.5rem;
+    padding: 2.2rem;
+}
+
+.left-dots img {
+    width: 10%;
+}
+
+
+/* SCOPE OF PROGRAM SECTION */
+
+.scope__section {
+    padding-top: 4.3rem;
+}
+
+.row-2 {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.col-left {
+    flex-basis: 60%;
+    flex-grow: 0;
+    max-width: 60%;
+}
+
+.section-red-text {
+    font-size: 1.5rem;
+    color: var(--main-color);
+    font-weight: 400;
+}
+
+.section-desc {
+    font-size: 2.5rem;
+    color: var(--Dark-gray);
+    font-weight: 700;
+}
+
+.p-card {
+    background: var(--white);
+    border-radius: 41px;
+    box-shadow: 0 .7rem 1.4rem rgba(231, 51, 43, .1);
+    min-height: 15rem !important;
+    padding: 2.5rem !important;
+}
+
+.p-card__title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--Dark-gray);
+    padding-bottom: 1.3rem;
+}
+
+.icon-box {
+    display: flex;
+    align-items: center;
+}
+
+.icon-box img {
+    margin-right: .8rem;
+}
+
+.p-card__desc {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--Light-gray);
+    line-height: 140%;
+    padding-top: 1.9rem;
+    padding-bottom: 2.5rem;
+}
+
+.wire-3 {
+    display: flex;
+    justify-content: center;
+}
+
+.wire-3 img {
+    margin-top: -2.3rem!important;
+    width: 13%!important;
 }
