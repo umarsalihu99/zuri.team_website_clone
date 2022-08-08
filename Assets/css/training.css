@@ -1,6 +1,11 @@
 @font-face {
-    font-family: Averta;
-    src: url(https://res.cloudinary.com/dafsch2zs/raw/upload/v1596618987/Zuri%20Landing/AvertaDemoPECuttedDemo-Regular_dghpn7.otf);
+    font-family: "Graphik";
+    src: url("/textfont/GraphikRegular.otf") format("truetype");
+}
+
+@font-face {
+    font-family: "Graphik";
+    src: url("/textfont/GraphikBold.otf") format("truetype");
 }
 
 :root {
@@ -10,6 +15,7 @@
     --Light-gray: #514949;
     --green: #43b97f;
     --white: #FFFFFF;
+    --main-font: 'Graphik', san-serif;
 }
 
 * {
@@ -23,6 +29,7 @@
 html,
 body {
     font-size: 16px;
+    font-family: var(--main-font);
     background-color: var(--secondary-color);
     color: var(--Dark-gray);
     overflow-x: hidden;
@@ -97,6 +104,25 @@ a {
     padding-top: 12.5rem !important;
 }
 
+.hero__section .row {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.hero__section .col {
+    flex-basis: 25%;
+    flex-grow: 0;
+    max-width: 25%;
+}
+
+.hero__text-box {
+    flex-basis: 50%;
+    flex-grow: 0;
+    max-width: 50%;
+    justify-content: center;
+    text-align: center;
+}
+
 .hero__section .lady-pic,
 .hero__section .guy-pic {
     max-width: 25%;
@@ -109,23 +135,19 @@ a {
 }
 
 .hero__section .lady-pic img {
-    min-width: 25rem !important;
-}
-
-.hero__section .hero__text-box {
-    max-width: 50%;
-    justify-content: center;
-    text-align: center;
+    min-width: 20rem !important;
 }
 
 .p-1 {
-    font-size: 1.12rem !important;
+    font-size: 1.2rem !important;
     font-weight: 400;
     color: var(--main-color);
+    padding-bottom: 1rem;
+    opacity: 0.7;
 }
 
 .p-2 {
-    font-size: 3.4rem !important;
+    font-size: 3rem !important;
     font-weight: 700;
     color: var(--Dark-gray);
     line-height: 110% !important;
@@ -133,23 +155,25 @@ a {
 
 .line {
     display: flex;
-    justify-content: right;
-    margin-left: -1.3rem;
+    justify-content: center;
+    margin-right: -14rem;
     margin-bottom: 1.8rem;
+    padding-top: .3rem;
 }
 
 .line img {
-    width: 33%;
+    width: 21%;
 }
 
 .p-3 {
-    max-width: 70%;
+    width: 60%;
     margin: auto !important;
     font-size: 1.13rem !important;
     font-weight: 400 !important;
     color: var(--Light-gray);
     line-height: 1.4;
     padding-bottom: 2.5rem;
+    opacity: 0.8;
 }
 
 .btn {
@@ -167,6 +191,10 @@ a {
     display: flex;
     justify-content: end;
     margin: auto;
+}
+
+.wire img {
+    width: 35%;
 }
 
 .male__face {
@@ -196,7 +224,7 @@ a {
     font-weight: 600 !important;
     color: var(--Dark-gray);
     text-align: left;
-    text-transform: uppercase !important;
+    text-transform: uppercase;
 }
 
 .middle__logo img {
@@ -206,11 +234,11 @@ a {
 
 .powered-by__section .row .right__align-text {
     max-width: 23rem;
-    font-size: 1.5rem !important;
-    font-weight: 400 !important;
+    font-size: 1.5rem;
+    font-weight: 400;
     color: var(--Light-gray);
     text-align: right;
-    text-transform: lowercase !important;
+    text-transform: lowercase;
 }
 
 .powered-by__section .row .right__align-text span {
@@ -251,6 +279,7 @@ a {
 }
 
 .why-zuri__desc {
+    min-width: 40rem;
     font-size: 2.5rem;
     font-weight: 700;
     color: var(--Dark-gray);
@@ -265,7 +294,7 @@ a {
 }
 
 .why-zuri__section .row .star img {
-    width: 41%;
+    width: 38%;
 }
 
 
@@ -368,12 +397,14 @@ a {
 .section__desc {
     font-size: 1.13rem !important;
     color: var(--white);
+    opacity: 0.9;
 }
 
 .section__title {
-    font-size: 2.5rem !important;
+    font-size: 2.5rem;
     font-weight: 700 !important;
     color: var(--white);
+    opacity: 0.9;
 }
 
 .section__desc {
@@ -515,4 +546,76 @@ a {
 .wire-3 img {
     margin-top: -2.3rem!important;
     width: 13%!important;
+}
+
+.btn-enroll {
+    display: inline-block;
+    color: var(--white);
+    padding: .6rem 2rem;
+}
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1200px) {
+    .hero__section .row {
+        flex-direction: column;
+    }
+    .hero__section .row .col {
+        max-width: 100%;
+    }
+    .hero__text-box {
+        max-width: 100%;
+    }
+    .guy-pic {
+        display: none;
+    }
+    .why-zuri__section .row {
+        flex-direction: column;
+    }
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .red-bg_section .row {
+        flex-direction: column;
+    }
+    .col,
+    .image-showcase {
+        max-width: 100%;
+    }
+    .section__title {
+        font-size: 2rem;
+    }
+    .section__desc {
+        min-width: 100%;
+    }
+    .skills {
+        display: inline-flex;
+        flex-wrap: nowrap;
+    }
+}
+
+@media (max-width: 900px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+    .why-zuri__section .row .star {
+        display: none;
+    }
+    .powered-by__section .row {
+        flex-direction: column;
+        padding: 1.5rem 0;
+    }
+    .powered-by__section .row .left__align-text {
+        max-width: 100%;
+        text-align: center;
+    }
+    .middle__logo img {
+        max-width: 100%;
+    }
+    .powered-by__section .row .right__align-text {
+        max-width: 100%;
+        text-align: center;
+        font-size: 1.35rem;
+    }
 }
